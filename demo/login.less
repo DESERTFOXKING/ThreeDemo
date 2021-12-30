@@ -1,0 +1,37 @@
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  background-color: #141a48;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .gifContainer {
+    position: relative;
+  }
+  .loginBox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 400px;
+    height: 260px;
+    margin: auto;
+    border-radius: 8px;
+    :global {
+      .ant-input {
+        color: fade(#fff, 85);
+        background: transparent;
+        border-color: fade(#fff, 10);
+      }
+      .ant-input:focus, .ant-input-focused, .ant-input:hover {
+        border-color: #40a9ff;
+      }
+    }
+  }
+}
